@@ -1,0 +1,107 @@
+<!--1) Creați o pagină numită index.html. Adăugați doctype și setați limba documentului în tagul html-->
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta name="keywords" content="truckstore, truck, man, scania, volvo, daf, camion, alextrucks"> <!--9)Textul trebuie să conțină toate cuvintele cheie identificate pentru pagina curentă-->
+    <meta name="description" content="Dealer autorizat de autocamioane multi-marca">
+    <!--2) Folositi 4 taguri meta relevante pentru a specifica: charset-ul, autorul, cuvintele cheie, descrierea.-->
+    <title>AlexTruck Store - Home</title>
+    <%- include("../fragmente/head.ejs") %>
+    <meta charset="UTF-8">
+
+    <meta name="author" content="Nicoi Alexandru">
+    <!--3) Adaugati un title corespunzator continutului textului-->
+    <!--4) Adaugati un favicon relevant pentru temă.-->
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+</head>
+
+<!--5) Împărțiți body-ul în header, main, footer-->
+<body>
+
+<%- include("../fragmente/header.ejs") %>
+<main>
+    <section id="despre-noi">
+        <h2>Despre noi</h2>
+        <p>Informatii despre AlexTrucks</p>
+        <!--7) Folosiți minim un tag dintre: section, article, aside. Trebuie să existe măcar un caz de taguri de secționare imbricate (secțiune în secțiune).
+        Puneți headingul cu nivelul corespunzător nivelului imbricării. Atenție, nu folosim headinguri decât ca titluri pentru tagurile de secționare-->
+        <aside>
+            <p> Cu si despre camioane </p>
+        </aside>
+        <!--10)În cadrul textului îndepliniți 3 dintre cerințele de mai jos, la alegere:
+        -marcați cuvintele și sintagmele cheie cu ajutorul tagului b
+        -marcați textul șters (corectat sau care nu mai e relevant) cu tagul s și textul inserat în loc cu tagul ins
+        -marcați textul accentuat cu em-->
+        <p>AlexTrucks Dealer <s>este doar un truckstore</s> <ins>este partenerul tau principal in alegerea unei flote de camioane </ins>, care sa livreze intr-un
+            mod <em>eficient, ieftin si placut</em> nevoile fiecarei companii logistice. Ofertele noastre se incadreaza
+            tuturor companiilor de camioane, gama de <b>autocamioane</b> fiind diversificata si accesibila pentru orice nivel al firmei,
+            de la flote mici pentru <b>curse interne</b>, pana la intregi parcuri pregatite pentru <b>curse externe</b></p>
+    </section>
+    <section id="catalog">
+        <h2>Catalog complet</h2>
+        <p>Aici gasesti catalogul complet al ofertei noastre de autocamioane</p>
+        <!--12) Creați în pagină mai multe zone de details și summary.
+        Pot fi întrebări frecvente, pot fi niște oferte pentru care afișăm titlul și utilizatorul le deschide pe cele care îl interesează, pot fi secțiuni explicative etc.-->
+        <!--7) Folosiți minim un tag dintre: section, article, aside. Trebuie să existe măcar un caz de taguri de secționare imbricate (secțiune în secțiune).
+Puneți headingul cu nivelul corespunzător nivelului imbricării. Atenție, nu folosim headinguri decât ca titluri pentru tagurile de secționare-->
+        <section>
+            <details>
+                <summary id="volvo">Volvo</summary>
+                <h3>Performanta si confort sporit</h3>
+                <ol>
+                    <li> FH16 Classic </li>
+                    <li> FH 2012 </li>
+                </ol>
+                <p><a href="volvo.html">Oferta completa Volvo</a></p>
+            </details>
+        </section>
+        <section>
+            <!-- 8) În cadrul secțiunilor folosiți minim 2 taguri dintre următoare taguri de grupare: p, ol, ul, blockquoute, dl-->
+            <details>
+                <summary id="scania">Scania</summary>
+                <h3>Eficienta si putere</h3>
+                <ol>
+                    <li> R 2009 </li>
+                    <li> Streamline </li>
+                    <li> R / S </li>
+                </ol>
+                <p>Noua Scania S</p>
+                <!--11) iframe ytb-->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PXwGoEN4J50" title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                <p><a href="scania.html">Oferta completa Scania</a></p>
+            </details>
+        </section>
+        <section>
+            <details>
+                <summary id="man">MAN</summary>
+                <h3>Tractorul germaniei</h3>
+                <ol>
+                    <li> TGX </li>
+                    <li> TGX Euro 6 </li>
+                </ol>
+                <p><a href="man.html">Oferta completa MAN</a></p>
+            </details>
+        </section>
+        <section>
+            <details>
+                <summary id="daf">DAF</summary>
+                <h3>Accesibil si fiabil</h3>
+                <ol>
+                    <li> XF 105 </li>
+                    <li> XF Euro 6 </li>
+                    <li> XG </li>
+                </ol>
+                <p>Noul DAF XG</p>
+                <!--11) iframe ytb-->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WnT8sfo4RPU" title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p><a href="daf.html">Oferta completa DAF</a></p>
+            </details>
+        </section>
+    </section>
+</main>
+<%- include("../fragmente/footer.ejs") %>
+</body>
+</html>

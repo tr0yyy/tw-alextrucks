@@ -1,0 +1,29 @@
+<!--1) Creați o pagină numită index.html. Adăugați doctype și setați limba documentului în tagul html-->
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta name="keywords" content="truckstore, truck, man, scania, volvo, daf, camion, alextrucks"> <!--9)Textul trebuie să conțină toate cuvintele cheie identificate pentru pagina curentă-->
+    <meta name="description" content="Dealer autorizat de autocamioane multi-marca">
+    <!--2) Folositi 4 taguri meta relevante pentru a specifica: charset-ul, autorul, cuvintele cheie, descrierea.-->
+    <title>AlexTruck Store - Home</title>
+    <%- include("../fragmente/head.ejs") %>
+    <meta charset="UTF-8">
+
+    <meta name="author" content="Nicoi Alexandru">
+    <!--3) Adaugati un title corespunzator continutului textului-->
+    <!--4) Adaugati un favicon relevant pentru temă.-->
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+</head>
+
+<!--5) Împărțiți body-ul în header, main, footer-->
+<body>
+
+<%- include("../fragmente/header.ejs") %>
+<main>
+    <section>
+        <h2>Pagina 2</h2>
+    </section>
+</main>
+<%- include("../fragmente/footer.ejs") %>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+    --albastrusprenegru: #00020D;
+    --albastruinchis: #012340;
+    --cyan: #024059;
+    --albastrudeschis: #4E8DA6;
+    --albastruspregri: #ADD4D9;
+    background-color: var(--albastruspregri);
+    font-size:16px;
+}
+
+#hamburger{
+    display: none
+}
+
+
+#home{
+}
+
+
+#div-header{
+    color: black;
+}
+
+header{
+    overflow: visible;
+}
+
+#gr{
+    height: 80%;
+    display: grid;
+    grid-template-areas:
+                        "d1 d1 d1 d1"
+                        "d5 d6 d6 d7"
+                        "d3 d3 d2 d2"
+                        "d4 d4 d2 d2"
+                        "d8 d8 d8 d8";
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows:repeat(5, 1fr);
+    grid-gap:0.5em;
+    border: 1px solid black;
+}
+
+#gr>*{
+    border: 1px solid black;
+}
+
+
+
+#div-footer{
+    height: 10%;
+    border: 2px solid black;
+}
+
+
+
+

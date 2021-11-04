@@ -1,0 +1,201 @@
+<!--1) Creați o pagină numită index.html. Adăugați doctype și setați limba documentului în tagul html-->
+<!DOCTYPE html>
+<html lang="ro" xmlns="http://www.w3.org/1999/html">
+<head>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/style.css" media="only screen and (min-width:1000px)"/>
+    <link rel="stylesheet" href="css/style-1000.css" media="only screen and (min-width:451px) and (max-width:999px)" />
+    <link rel="stylesheet" href="css/style-450.css" media="only screen and (max-width:450px)"/>
+    <script src="https://use.fontawesome.com/420035dafb.js"></script>
+    <!--2) Folositi 4 taguri meta relevante pentru a specifica: charset-ul, autorul, cuvintele cheie, descrierea.-->
+    <meta charset="UTF-8">
+    <meta name="keywords" content="truckstore, truck, man, scania, volvo, daf, camion, alextrucks"> <!--9)Textul trebuie să conțină toate cuvintele cheie identificate pentru pagina curentă-->
+    <meta name="description" content="Dealer autorizat de autocamioane multi-marca">
+    <meta name="author" content="Nicoi Alexandru">
+    <!--3) Adaugati un title corespunzator continutului textului-->
+    <title>AlexTruck Store</title>
+    <!--4) Adaugati un favicon relevant pentru temă.-->
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+
+</head>
+
+<!--5) Împărțiți body-ul în header, main, footer-->
+<body>
+<header>
+    <div id="div-header">
+    <h1 id="top">AlexTrucks Dealer</h1>
+    <!--6) În header faceți un sistem de navigare ca în curs(nav cu listă neordonată de linkuri), cu opțiuni  principale și secundare
+    (pentru opțiunea "Acasă", adică pagina principală, subopțiunile vor cuprinde linkuri către secțiunile paginii, care vor avea id-uri relevante).
+    Folosiți în header h1 pentru titlul site-ului.-->
+
+    <div>
+
+    <nav>
+        <label id="hamburger" for="ch-menu"><span class="fa fa-bars fa-3x"></span></label>
+        <input id="ch-menu" type="checkbox" />
+        <div id = "sus">
+        <ul>
+            <li class = "button"> <div><a href="#despre-noi"><i class="fa fa-home"></i><span id="home">Pagina principala</span></a></div> </li>
+            <li class = "dropdown button"> <a href="#catalog" class="dropbtn">Galerie </a>
+                <div class="dropdown-content">
+                    <a href="galerie-statica.html"><div class="sageata"><span>&#10230;</span></div>Galerie Statica</a>
+                    <a href="galerie-dinamica.html"><div class="sageata"><span>&#10230;</span></div>Galerie Dinamica</a>
+            </div> </li>
+            <li class = "dropdown button"> <a href="#catalog" class="dropbtn">Catalog </a>
+                <div class="dropdown-content">
+                    <a href="#volvo"><div class="sageata"><span>&#10230;</span></div>Volvo</a>
+                    <a href="#scania"><div class="sageata"><span>&#10230;</span></div>Scania</a>
+                    <a href="#man"><div class="sageata"><span>&#10230;</span></div>MAN</a>
+                    <a href="#daf"><div class="sageata"><span>&#10230;</span></div>DAF</a>
+                </div> </li>
+            <!--11) un link extern (se va deschide in fereastră nouă)-->
+            <li class = "button"><div> <a href="oferta.html">Solicita o oferta</a></div></li>
+            <li class = "button"><div> <a href="#contact">Contact</a></div></li>
+        </ul>
+        </div>
+    </nav>
+        </div>
+    </div>
+</header>
+
+
+<main>
+    <div id="gr">
+        <div id="div8">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros velit, facilisis vel felis elementum, tempus gravida ante. Sed eget ullamcorper leo. Duis finibus volutpat augue, in tristique ligula gravida sit amet. Sed condimentum interdum diam, ut ullamcorper eros bibendum ut. Nullam interdum dapibus nulla, quis dignissim sapien tempus sit amet. Pellentesque laoreet lacus vel fermentum tincidunt. Donec ac facilisis nisl. Fusce eleifend libero ipsum, non suscipit nibh consectetur feugiat. Vestibulum luctus mi dictum, ultricies erat a, bibendum erat.</p>
+
+        </div>
+        <div id="div2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros velit, facilisis vel felis elementum, tempus gravida ante. Sed eget ullamcorper leo. Duis finibus volutpat augue, in tristique ligula gravida sit amet. Sed condimentum interdum diam, ut ullamcorper eros bibendum ut. Nullam interdum dapibus nulla, quis dignissim sapien tempus sit amet. Pellentesque laoreet lacus vel fermentum tincidunt. Donec ac facilisis nisl. Fusce eleifend libero ipsum, non suscipit nibh consectetur feugiat. Vestibulum luctus mi dictum, ultricies erat a, bibendum erat.</p>
+        </div>
+        <div id="div3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros velit, facilisis vel felis elementum, tempus gravida ante. Sed eget ullamcorper leo. Duis finibus volutpat augue, in tristique ligula gravida sit amet. Sed condimentum interdum diam, ut ullamcorper eros bibendum ut. Nullam interdum dapibus nulla, quis dignissim sapien tempus sit amet. Pellentesque laoreet lacus vel fermentum tincidunt. Donec ac facilisis nisl. Fusce eleifend libero ipsum, non suscipit nibh consectetur feugiat. Vestibulum luctus mi dictum, ultricies erat a, bibendum erat.</p>
+
+        </div>
+        <div id="div4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros velit, facilisis vel felis elementum, tempus gravida ante. Sed eget ullamcorper leo. Duis finibus volutpat augue, in tristique ligula gravida sit amet. Sed condimentum interdum diam, ut ullamcorper eros bibendum ut. Nullam interdum dapibus nulla, quis dignissim sapien tempus sit amet. Pellentesque laoreet lacus vel fermentum tincidunt. Donec ac facilisis nisl. Fusce eleifend libero ipsum, non suscipit nibh consectetur feugiat. Vestibulum luctus mi dictum, ultricies erat a, bibendum erat.</p>
+
+        </div>
+        <div id="div5">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros velit, facilisis vel felis elementum, tempus gravida ante. Sed eget ullamcorper leo. Duis finibus volutpat augue, in tristique ligula gravida sit amet. Sed condimentum interdum diam, ut ullamcorper eros bibendum ut. Nullam interdum dapibus nulla, quis dignissim sapien tempus sit amet. Pellentesque laoreet lacus vel fermentum tincidunt. Donec ac facilisis nisl. Fusce eleifend libero ipsum, non suscipit nibh consectetur feugiat. Vestibulum luctus mi dictum, ultricies erat a, bibendum erat.</p>
+
+        </div>
+        <div id="div6">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros velit, facilisis vel felis elementum, tempus gravida ante. Sed eget ullamcorper leo. Duis finibus volutpat augue, in tristique ligula gravida sit amet. Sed condimentum interdum diam, ut ullamcorper eros bibendum ut. Nullam interdum dapibus nulla, quis dignissim sapien tempus sit amet. Pellentesque laoreet lacus vel fermentum tincidunt. Donec ac facilisis nisl. Fusce eleifend libero ipsum, non suscipit nibh consectetur feugiat. Vestibulum luctus mi dictum, ultricies erat a, bibendum erat.</p>
+
+        </div>
+        <div id="div7">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros velit, facilisis vel felis elementum, tempus gravida ante. Sed eget ullamcorper leo. Duis finibus volutpat augue, in tristique ligula gravida sit amet. Sed condimentum interdum diam, ut ullamcorper eros bibendum ut. Nullam interdum dapibus nulla, quis dignissim sapien tempus sit amet. Pellentesque laoreet lacus vel fermentum tincidunt. Donec ac facilisis nisl. Fusce eleifend libero ipsum, non suscipit nibh consectetur feugiat. Vestibulum luctus mi dictum, ultricies erat a, bibendum erat.</p>
+
+        </div>
+        <div id="div1">
+    <section id="despre-noi">
+        <h2>Despre noi</h2>
+        <p>Informatii despre AlexTrucks</p>
+        <!--7) Folosiți minim un tag dintre: section, article, aside. Trebuie să existe măcar un caz de taguri de secționare imbricate (secțiune în secțiune).
+        Puneți headingul cu nivelul corespunzător nivelului imbricării. Atenție, nu folosim headinguri decât ca titluri pentru tagurile de secționare-->
+        <aside>
+            <p> Cu si despre camioane </p>
+        </aside>
+        <!--10)În cadrul textului îndepliniți 3 dintre cerințele de mai jos, la alegere:
+        -marcați cuvintele și sintagmele cheie cu ajutorul tagului b
+        -marcați textul șters (corectat sau care nu mai e relevant) cu tagul s și textul inserat în loc cu tagul ins
+        -marcați textul accentuat cu em-->
+        <p>AlexTrucks Dealer <s>este doar un truckstore</s> <ins>este partenerul tau principal in alegerea unei flote de camioane </ins>, care sa livreze intr-un
+            mod <em>eficient, ieftin si placut</em> nevoile fiecarei companii logistice. Ofertele noastre se incadreaza
+            tuturor companiilor de camioane, gama de <b>autocamioane</b> fiind diversificata si accesibila pentru orice nivel al firmei,
+            de la flote mici pentru <b>curse interne</b>, pana la intregi parcuri pregatite pentru <b>curse externe</b></p>
+    </section>
+
+    <section id="catalog">
+        <h2>Catalog complet</h2>
+        <p>Aici gasesti catalogul complet al ofertei noastre de autocamioane</p>
+        <!--12) Creați în pagină mai multe zone de details și summary.
+        Pot fi întrebări frecvente, pot fi niște oferte pentru care afișăm titlul și utilizatorul le deschide pe cele care îl interesează, pot fi secțiuni explicative etc.-->
+        <!--7) Folosiți minim un tag dintre: section, article, aside. Trebuie să existe măcar un caz de taguri de secționare imbricate (secțiune în secțiune).
+Puneți headingul cu nivelul corespunzător nivelului imbricării. Atenție, nu folosim headinguri decât ca titluri pentru tagurile de secționare-->
+        <section>
+            <details>
+                <summary id="volvo">Volvo</summary>
+                <h3>Performanta si confort sporit</h3>
+                <ol>
+                    <li> FH16 Classic </li>
+                    <li> FH 2012 </li>
+                </ol>
+                <p><a href="volvo.html">Oferta completa Volvo</a></p>
+                <a href="https://www.volvotrucks.ro/ro-ro/">SITE OFICIAL VOLVO</a>
+            </details>
+        </section>
+        <section>
+            <!-- 8) În cadrul secțiunilor folosiți minim 2 taguri dintre următoare taguri de grupare: p, ol, ul, blockquoute, dl-->
+            <details>
+                <summary id="scania">Scania</summary>
+                <h3>Eficienta si putere</h3>
+                <div>
+                <ol>
+                    <li> R 2009 </li>
+                    <li> Streamline </li>
+                    <li> R / S </li>
+                </ol>
+                </div>
+                <!--11) iframe ytb-->
+                <div class="iframe-flex">
+                <div class="taburi-iframe">
+                    <a href="https://www.youtube.com/embed/PXwGoEN4J50" target="ifr-video">Noua Scania S!</a>
+                    <a href="https://www.youtube.com/embed/6rWzj6szpcI" target="ifr-video" >Teste siguranta Scania!</a>
+                </div>
+                <div class="iframe-video">
+                <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/PXwGoEN4J50"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                </div>
+                <p><a href="scania.html">Oferta completa Scania</a></p>
+            </details>
+        </section>
+        <section>
+            <details>
+                <summary id="man">MAN</summary>
+                <h3>Tractorul germaniei</h3>
+                <ol>
+                    <li> TGX </li>
+                    <li> TGX Euro 6 </li>
+                </ol>
+                <p><a href="man.html">Oferta completa MAN</a></p>
+            </details>
+        </section>
+        <section>
+            <details>
+                <summary id="daf">DAF</summary>
+                <h3>Accesibil si fiabil</h3>
+                <ol>
+                    <li> XF 105 </li>
+                    <li> XF Euro 6 </li>
+                    <li> XG </li>
+                </ol>
+                <p>Noul DAF XG</p>
+                <!--11) iframe ytb-->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WnT8sfo4RPU" title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p><a href="daf.html">Oferta completa DAF</a></p>
+            </details>
+        </section>
+    </section>
+        </div>
+    </div>
+</main>
+
+<footer id="div-footer">
+    <!--13) În footer se vor adăuga cu ajutorul tagului address informații de contact (telefon fictiv, marcată cu tagul a corespunzător, adresă fictivă, e-mail fictiv, marcat cu tagul a corespunzător)
+    14) În footer se va adăuga informație de copyright, folosind tagul small, simbolul specific de copyright cu codul html necesar și data creării paginii scrisă în limba română și pusă în tagul time cu atributul datetime corespunzător. -->
+    <a href="#"><div title="Inapoi sus" id = "headerjos2"><div id = "cone"></div></div>  </a>
+    <address id="contact">
+        Telefon:<a href="tel:0735-998-673"> 0712 345 678</a>a<br>
+        Adresa: Bd Republicii nr. 95, Ploiesti 100095<br>
+        E-mail: <a href="mailto:alextrucks@gmail.com">alextrucks@gmail.com</a>
+    </address>
+    <small>Copyright &copy; <time datetime="2021-10-11">11 Octombrie 2021</time> SC AlexTrucks SRL</small>
+</footer>
+</body>
+</html>
