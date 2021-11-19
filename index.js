@@ -1,3 +1,4 @@
+const {response} = require('express');
 const express = require('express');
 
 app = express();
@@ -5,32 +6,35 @@ app = express();
 console.log(__dirname)
 
 app.set("view engine", "ejs");
-app.get("/resurse", express.static(__dirname + "/resurse"));
+app.use("/resurse", express.static(__dirname + "/resurse"));
+
 
 app.get("/", function(req, res){
     console.log(req.url);
-    res.render("pagini/index");
+    let ip = req.ip;
+    res.render("pagini/index", {your_ip: ip});
 })
 
-app.get("/ceva", function(req, res){
+app.get("/index", function(req, res){
     console.log(req.url);
-    res.write("Pagina21!");
-    res.end();
+    let ip = req.ip;
+    res.render("pagini/index",{your_ip: ip});
 })
 
 app.get("/*", function(req, res){
     console.log(req.url);
-    res.render("pagini" + req.url, function(err, rezultatRender){
-        console.log(err);
-        if(err){
-            res.render("pagini/404");
-        }
-        else{
-            res.send(rezultatRender);
-        }
-        console.log(rezultatRender);
-        res.send(rezultatRender);
-    })
+    if(req.url.toString().includes(".ejs")){
+        res.render("pagini/403")
+    } else {
+        res.render("pagini" + req.url, function (err, rezultatRender) {
+            console.log(err);
+            if (err) {
+                res.render("pagini/404");
+            } else {
+                res.render("pagini/oferta")
+            }
+        })
+    }
 
 })
 
