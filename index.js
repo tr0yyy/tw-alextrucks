@@ -2,7 +2,16 @@ const {response} = require('express');
 const express = require('express');
 const {Client}= require("pg");
 
-var client=new Client({ user: 'alex', password:'alex', database:'postgres', host:'localhost', port:5432 });
+/*var client=new Client({ user: 'alex', password:'alex', database:'postgres', host:'localhost', port:5432 });
+ */
+var client = new Client({
+    user: 'wdmgtqdmwczcts',
+    password: '733ca6c423028c5fbe8e82b153abf6007abfb96519d34cd08d63c9a83dd7dcbd',
+    database: 'dbb3cktv37626g',
+    host: 'ec2-52-2-245-64.compute-1.amazonaws.com',
+    port: 5432
+})
+
 client.connect()
 
 app = express();
