@@ -4,7 +4,8 @@
   "description": "Truck dealer proiect tw",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [
     "truckstore",
@@ -20,6 +21,10 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "pg": "^8.7.1"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }

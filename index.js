@@ -1,5 +1,9 @@
 const {response} = require('express');
 const express = require('express');
+const {Client}= require("pg");
+
+var client=new Client({ user: 'alex', password:'alex', database:'postgres', host:'localhost', port:5432 });
+client.connect()
 
 app = express();
 
@@ -21,6 +25,21 @@ app.get("/index", function(req, res){
     res.render("pagini/index",{your_ip: ip});
 })
 
+app.get("/produse", function(req, res){
+    console.log(req.query)
+    var conditie=""
+    if(req.query.tip)
+        conditie+=` and tip_produs='${req.query.tip}'`;
+    client.query(`select * from produse where 1=1 ${conditie}`, function(err,rez){
+        console.log(err)
+        if (!err){
+            //console.log(rez);
+            res.render("pagini/produse",{produse:rez.rows});
+        } else {//TO DO curs
+        }
+    })
+})
+
 app.get("/*", function(req, res){
     console.log(req.url);
     if(req.url.toString().includes(".ejs")){
@@ -37,6 +56,8 @@ app.get("/*", function(req, res){
     }
 
 })
+
+
 
 app.listen(8080);
 
