@@ -1,0 +1,183 @@
+body {
+    --albastrusprenegru: #00020D;
+    --albastruinchis: #012340;
+    --cyan: #024059;
+    --albastrudeschis: #4E8DA6;
+    --albastruspregri: #ADD4D9;
+    background-color: var(--albastruspregri);
+}
+
+#div1{
+    grid-area: d1;
+}
+
+#div2{
+    grid-area: d2;
+}
+
+#div3{
+    grid-area: d3;
+}
+
+#div4{
+    grid-area: d4;
+}
+
+#div5{
+    grid-area: d5;
+}
+
+#div6{
+    grid-area: d6;
+}
+
+#div7{
+    grid-area: d7;
+}
+
+#div8{
+    grid-area: d8;
+}
+
+.button{
+    font-weight: normal;
+    transition: all 0.3s;
+}
+.button:hover{
+    box-shadow: inset 0 0 5px 1px white;
+}
+
+.taburi-iframe a{
+    text-decoration:none;
+    width:100px;
+
+    /*ca sa se comporte ca un bloc in sensul ca sa ii dau dimensiuni
+    dar sa vina unele langa altele ca elemente inline, nu unele sub altele
+
+    --- in task aveti de facut cu flexbox
+    */
+    display:flex;
+    flex-flow: column wrap;
+
+    border:2px solid var(--albastruinchis);
+
+    border-left: 8px solid var(--albastruinchis);
+
+    /*fara border in partea de jos*/
+    border-right: none;
+
+    /*rotunjesc doar colturile de sus:*/
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background-image: linear-gradient(white, white 50%, var(--albastruspregri));
+    color:var(--albastruinchis);
+    transition:all 0.5s linear;
+    text-align: center;
+}
+
+.taburi-iframe a:hover{
+    color:white;
+
+    /*ca sa anulez efectul gradientului si sa se vada imaginea din spate*/
+    background-image: none;
+    background-color: var(--albastruinchis);
+}
+
+.iframe-flex{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+}
+
+.iframe-video{
+    border-style: solid;
+    border-left-color: var(--cyan);
+    border-top-color: var(--cyan);
+    border-right-color: var(--albastrudeschis);
+    border-bottom-color: var(--albastrudeschis);
+    border-width: 0.5em;
+}
+
+nav{
+    position: sticky;
+    background-color: var(--albastruinchis);
+    top: 0;
+}
+
+#ch-menu{
+    display: none;
+}
+
+#cone {
+    width: 0;
+    height: 0;
+    transition-duration: 2s;
+    position: absolute;
+    top:5px;
+    left:4px;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 35px solid rgb(0, 132, 255);
+    border-radius: 50%;
+    transform: rotate(315deg);
+    opacity: 100%;
+
+}
+
+#headerjos2{
+    transition-duration: 2s;
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+    border-style: solid;
+    height: 50px;
+    width: 50px;
+    border-color: var(--albastrudeschis);
+    transform: rotate(45deg);
+    background-color: rgb(255, 255, 255);
+    opacity: 20%;
+}
+
+#headerjos2:hover{
+    transition-duration: 2s;
+    background-color: rgb(49, 47, 47);
+    opacity: 80%;
+}
+
+#headerjos2:hover #cone{
+    transition-duration: 2s;
+    border-bottom: 35px solid var(--albastruspregri);
+}
+
+.tabel-epic-frate{
+    caption-side: bottom;
+    border: 1px solid black;
+
+}
+
+td:nth-child(even) {
+    border-left-color: var(--albastrudeschis);
+    border-right-color: var(--cyan);
+}
+td:nth-child(odd) {
+    border-left-color: var(--cyan);
+    border-right-color: var(--albastrudeschis);
+}
+
+tr{
+    transition: background-color 0.5s;
+}
+
+tr:hover {
+    background-color:var(--cyan);
+    color:#ffffff;
+    text-shadow: 1px 2px #000000;
+    box-shadow: 0px 0px 10px #ffffff;
+    -webkit-box-shadow: 0px 0px 10px #ffffff;
+    -moz-box-shadow: 0px 0px 10px #ffffff;
+}
+
+td {
+    border: 1px solid black;
+}
+

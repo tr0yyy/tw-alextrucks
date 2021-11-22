@@ -1,21 +1,36 @@
 <header>
-    <h1 id="top">AlexTrucks Dealer</h1>
-    <!--6) În header faceți un sistem de navigare ca în curs(nav cu listă neordonată de linkuri), cu opțiuni  principale și secundare
-    (pentru opțiunea "Acasă", adică pagina principală, subopțiunile vor cuprinde linkuri către secțiunile paginii, care vor avea id-uri relevante).
-    Folosiți în header h1 pentru titlul site-ului.-->
-    <nav>
-        <ul>
-            <li> <a href="#despre-noi">Pagina principala</a></li>
-            <li> <a href="#catalog">Catalog </a>
-                <ul>
-                    <li> <a href="#volvo">Volvo</a></li>
-                    <li> <a href="#scania">Scania</a></li>
-                    <li> <a href="#man">MAN</a></li>
-                    <li> <a href="#daf">DAF</a></li>
-                </ul> </li>
-            <!--11) un link extern (se va deschide in fereastră nouă)-->
-            <li> <a href="oferta.html">Solicita o oferta</a></li>
-            <li> <a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <div id="div-header">
+        <h1 id="top">AlexTrucks Dealer</h1>
+        <!--6) În header faceți un sistem de navigare ca în curs(nav cu listă neordonată de linkuri), cu opțiuni  principale și secundare
+        (pentru opțiunea "Acasă", adică pagina principală, subopțiunile vor cuprinde linkuri către secțiunile paginii, care vor avea id-uri relevante).
+        Folosiți în header h1 pentru titlul site-ului.-->
+
+        <div>
+
+            <nav>
+                <label id="hamburger" for="ch-menu"><span class="fa fa-bars fa-3x"></span></label>
+                <input id="ch-menu" type="checkbox" />
+                <div id = "sus">
+                    <ul>
+                        <li class = "button"> <div><a href="index"><i class="fa fa-home"></i><span id="home">Pagina principala</span></a></div> </li>
+                        <li class = "dropdown button"> <div class = "dropbtn" >Galerie </div>
+                            <div class="dropdown-content">
+                                <a href="galerie-statica.html"><div class="sageata"><span>&#10230;</span></div>Galerie Statica</a>
+                                <a href="galerie-dinamica.html"><div class="sageata"><span>&#10230;</span></div>Galerie Dinamica</a>
+                            </div> </li>
+                        <li class = "dropdown button"> <a href="#catalog" class="dropbtn">Catalog </a>
+                            <div class="dropdown-content">
+                                <a href="#volvo"><div class="sageata"><span>&#10230;</span></div>Volvo</a>
+                                <a href="#scania"><div class="sageata"><span>&#10230;</span></div>Scania</a>
+                                <a href="#man"><div class="sageata"><span>&#10230;</span></div>MAN</a>
+                                <a href="#daf"><div class="sageata"><span>&#10230;</span></div>DAF</a>
+                            </div> </li>
+                        <!--11) un link extern (se va deschide in fereastră nouă)-->
+                        <li class = "button"><div> <a href="oferta">Solicita o oferta</a></div></li>
+                        <li class = "button"><div> <a href="#contact">Contact</a></div></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
 </header>
