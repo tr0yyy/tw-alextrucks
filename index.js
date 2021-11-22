@@ -70,8 +70,10 @@ app.get("/*", function(req, res){
 })
 
 
+var s_port=process.env.PORT || 5000;
 
-app.listen(8080);
+app.listen(s_port);
+
 
 console.log("Serverul a pornit")
 
