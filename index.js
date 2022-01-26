@@ -292,10 +292,9 @@ app.get("/*", function(req, res){
 
 
 
-// var s_port=process.env.PORT || 5000;
-//
-// app.listen(s_port);
-app.listen(8080);
+var s_port=process.env.PORT || 5000;
+app.listen(s_port);
+//app.listen(8080);
 
 console.log("Serverul a pornit")
 
