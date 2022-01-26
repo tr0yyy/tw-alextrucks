@@ -1,0 +1,60 @@
+#watermark
+{
+    display: block;
+    position: fixed;
+    bottom:0;
+    color:black;
+    right:0;
+    width: 100px;
+    height: 2cm;
+    border: 2px black;
+    border-style: double;
+    opacity: 0.65;
+}
+
+#banner{
+    position: relative;
+    left: 5%;
+    top: 20%;
+    width: 80vw;
+    border: 2px black;
+    border-style: dotted;
+}
+
+img,video,#top{
+    display: none;
+}
+#mail,#tel{
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    margin-top: 45%;
+    position: block;
+    font-size: 5em;
+    border-bottom: 2px solid black;
+}
+
+nav ul{
+    display: none;
+}
+
+header{
+    page-break-after: always;
+}
+
+footer{
+    page-break-before: always;
+}
+
+@page:left{
+
+    margin-left:2.5cm;
+    margin-right:0.5cm;
+}
+@page:right{
+
+    margin-right:2.5cm;
+    margin-left:0.5cm;
+}

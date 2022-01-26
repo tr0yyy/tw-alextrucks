@@ -1,10 +1,14 @@
 <header>
+    <script type="text/javascript" src=/resurse/js/readCategories.js></script>
+    <script type="text/javascript" src=/resurse/js/toggleDarkMode.js></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div id="div-header">
-        <h1 id="top">AlexTrucks Dealer</h1>
+        <h1 id="top-h1">AlexTrucks Dealer</h1>
+        <p id="banner">Acesta este un proiect scolar</p>
         <!--6) În header faceți un sistem de navigare ca în curs(nav cu listă neordonată de linkuri), cu opțiuni  principale și secundare
         (pentru opțiunea "Acasă", adică pagina principală, subopțiunile vor cuprinde linkuri către secțiunile paginii, care vor avea id-uri relevante).
         Folosiți în header h1 pentru titlul site-ului.-->
-
+        <button class="btn" onclick="toggle()"><i class="fa fa-lightbulb-o"></i></button>
         <div>
 
             <nav>
@@ -12,18 +16,16 @@
                 <input id="ch-menu" type="checkbox" />
                 <div id = "sus">
                     <ul>
-                        <li class = "button"> <div><a href="index"><i class="fa fa-home"></i><span id="home">Pagina principala</span></a></div> </li>
-                        <li class = "dropdown button"> <div class = "dropbtn" >Galerie </div>
-                            <div class="dropdown-content">
-                                <a href="galerie-statica.html"><div class="sageata"><span>&#10230;</span></div>Galerie Statica</a>
-                                <a href="galerie-dinamica.html"><div class="sageata"><span>&#10230;</span></div>Galerie Dinamica</a>
+                        <li class = "button"> <div><a href="/index"><i class="fa fa-home"></i><span id="home">Pagina principala</span></a></div> </li>
+                        <li class = "dropdown button"> <a href="/produse" class = "dropbtn" >Produse  </a>
+                            <div class="dropdown-content" id = "lista-produse">
                             </div> </li>
                         <li class = "dropdown button"> <a href="#catalog" class="dropbtn">Catalog </a>
                             <div class="dropdown-content">
-                                <a href="#volvo"><div class="sageata"><span>&#10230;</span></div>Volvo</a>
-                                <a href="#scania"><div class="sageata"><span>&#10230;</span></div>Scania</a>
-                                <a href="#man"><div class="sageata"><span>&#10230;</span></div>MAN</a>
-                                <a href="#daf"><div class="sageata"><span>&#10230;</span></div>DAF</a>
+                                <a href="/#volvo"><div class="sageata"><span>&#10230;</span></div>Volvo</a>
+                                <a href="/#scania"><div class="sageata"><span>&#10230;</span></div>Scania</a>
+                                <a href="/#man"><div class="sageata"><span>&#10230;</span></div>MAN</a>
+                                <a href="/#daf"><div class="sageata"><span>&#10230;</span></div>DAF</a>
                             </div> </li>
                         <!--11) un link extern (se va deschide in fereastră nouă)-->
                         <li class = "button"><div> <a href="oferta">Solicita o oferta</a></div></li>

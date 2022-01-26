@@ -7,6 +7,15 @@ body {
     background-color: var(--albastruspregri);
 }
 
+.dark {
+    --albastrusprenegru: #ADD4D9;
+    --albastruinchis: #4E8DA6;
+    --cyan: #024059;
+    --albastrudeschis: #012340;
+    --albastruspregri: #00020D;
+    background-color: var(--albastruspregri);
+}
+
 #div1{
     grid-area: d1;
 }
@@ -149,10 +158,38 @@ nav{
     border-bottom: 35px solid var(--albastruspregri);
 }
 
-.tabel-epic-frate{
+table{
     caption-side: bottom;
     border: 1px solid black;
+    color: black
+}
 
+table.dark{
+    caption-side: bottom;
+    border: 1px solid white;
+    color: white
+}
+table thead {
+    border-bottom: 3px solid var(--albastrusprenegru);
+    border-left: 2px solid var(--cyan);
+    border-right: 2px solid var(--cyan);
+}
+
+table thead th{
+    border-top: 2px solid var(--albastrusprenegru);
+}
+
+table tfoot {
+    border-top: 3px solid var(--albastrusprenegru);
+    border-bottom: 2px solid var(--albastrusprenegru);
+}
+
+table tfoot th{
+    border-left: 2px solid var(--cyan);
+}
+
+table tbody th{
+    border-left: 2px solid var(--cyan);
 }
 
 td:nth-child(even) {
@@ -172,12 +209,11 @@ tr:hover {
     background-color:var(--cyan);
     color:#ffffff;
     text-shadow: 1px 2px #000000;
-    box-shadow: 0px 0px 10px #ffffff;
-    -webkit-box-shadow: 0px 0px 10px #ffffff;
-    -moz-box-shadow: 0px 0px 10px #ffffff;
+    box-shadow: 0px 0px 10px #ff0000;
+    -webkit-box-shadow: 0px 0px 10px #ff0000;
+    -moz-box-shadow: 0px 0px 10px #ff0000;
 }
 
 td {
     border: 1px solid black;
 }
-

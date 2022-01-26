@@ -5,7 +5,28 @@ body {
     --albastrudeschis: #4E8DA6;
     --albastruspregri: #ADD4D9;
     background-color: var(--albastruspregri);
+    color: black;
     font-size:16px;
+}
+
+.dark {
+    --albastrusprenegru: #ADD4D9;
+    --albastruinchis: #4E8DA6;
+    --cyan: #024059;
+    --albastrudeschis: #012340;
+    --albastruspregri: #00020D;
+    background-color: var(--albastruspregri);
+    color: white;
+    font-size:16px;
+}
+
+
+h1 {
+    color:black;
+}
+
+h1.darkk {
+    color:white;
 }
 
 #hamburger{
@@ -44,6 +65,13 @@ header{
     border: 1px solid black;
 }
 
+#gr>*.dark{
+    border: 1px solid white;
+}
+
+#gr.dark{
+    border: 1px solid white;
+}
 
 
 #div-footer{

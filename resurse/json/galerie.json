@@ -1,0 +1,100 @@
+{
+  "cale_galerie": "resurse/img/galerie/",
+  "imagini": [
+    {
+      "cale_fisier": "actrosautobahn.jpg",
+      "titlu": "Mercedes Actros - Autobahn",
+      "alt": "actros_autobahn",
+      "text_descriere": "Doua camioane Mercedes Actros pe Autobahn",
+      "luni": [
+        "decembrie",
+        "ianuarie",
+        "februarie"
+      ]
+    },
+    {
+      "cale_fisier": "actrosflota.jpg",
+      "titlu": "Mercedes Actros - Flota",
+      "alt": "actros_flota",
+      "text_descriere": "Flota de Mercedes Actros, in culori alb-albastre",
+      "luni": [
+        "decembrie",
+        "ianuarie",
+        "februarie"
+      ]
+    },
+    {
+      "cale_fisier": "dafnatura.jpg",
+      "titlu": "DAF - in natura",
+      "alt": "daf_natura",
+      "text_descriere": "O poza cu DAF XF Euro 6 in natura",
+      "luni": [
+        "decembrie",
+        "ianuarie",
+        "februarie"
+      ]
+    },
+    {
+      "cale_fisier": "douavolvo.jpg",
+      "titlu": "VOLVO - Autobahn",
+      "alt": "volvo_autobahn",
+      "text_descriere": "Camioane Volvo pe Autobahn",
+      "luni": [
+        "decembrie",
+        "ianuarie",
+        "februarie"
+      ]
+    },
+    {
+      "cale_fisier": "iveco.jpg",
+      "titlu": "IVECO - Flota",
+      "alt": "iveco_flota",
+      "text_descriere": "Flota de Iveco rosii",
+      "luni": [
+        "decembrie",
+        "ianuarie",
+        "februarie"
+      ]
+    },
+    {
+      "cale_fisier": "manautobahn.jpg",
+      "titlu": "MAN - Autobahn",
+      "alt": "man_autobahn",
+      "text_descriere": "Poza cu camion MAN pe Autobahn",
+      "luni": [
+        "decembrie",
+        "ianuarie",
+        "februarie"
+      ]
+    },
+    {
+      "cale_fisier": "douavolvo.jpg",
+      "titlu": "VOLVO - Autobahn",
+      "alt": "volvo_autobahn",
+      "text_descriere": "Camioane Volvo pe Autobahn",
+      "luni": [
+        "decembrie",
+        "ianuarie",
+        "februarie"
+      ]
+    },
+    {
+      "cale_fisier": "iveco.jpg",
+      "titlu": "IVECO - Flota",
+      "alt": "iveco_flota",
+      "text_descriere": "Flota de Iveco rosii",
+      "luni": [
+        "decembrie",
+        "ianuarie",
+        "februarie"
+      ]
+    },
+    {
+      "cale_fisier": "manautobahn.jpg",
+      "titlu": "MAN - Autobahn",
+      "alt": "man_autobahn",
+      "text_descriere": "Poza cu camion MAN pe Autobahn",
+      "luni": ["decembrie", "ianuarie", "februarie"]
+    }
+  ]
+}

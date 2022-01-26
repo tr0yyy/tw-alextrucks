@@ -8,6 +8,16 @@ body {
     font-size:14px;
 }
 
+.dark {
+    --albastrusprenegru: #ADD4D9;
+    --albastruinchis: #4E8DA6;
+    --cyan: #024059;
+    --albastrudeschis: #012340;
+    --albastruspregri: #00020D;
+    background-color: var(--albastruspregri);
+    font-size:14px;
+}
+
 #gr{
     height: 80%;
     display: grid;
@@ -24,6 +34,18 @@ body {
 
 #gr>*{
     border: 1px solid black;
+}
+
+#gr>*.dark{
+    border: 1px solid white;
+}
+
+.top-h1 {
+    color: black;
+}
+
+.top-h1.dark{
+    color:white;
 }
 
 #home{

@@ -14,16 +14,37 @@
 <main>
     <div id="gr">
         <div id="div1">
-            <video controls style="width:80%;height:auto" poster="/resurse/.jpg">
-                <source src="resurse/" type="video/mp4">
-                <source src="resurse/" type="video/ogv">
-                <track  src="resurse/.vtt" kind="captions" srclang="ro" label="romană" />
-                <track  default src="resurse/.vtt" kind="captions" srclang="en" label="engleză" />
-            </video>
+        <section >
+            <div class="galerie-statica">
+            <% for (let img of locals.imagini){ %>
+            <figure class="galerie-tranzitie">
+                <picture class="galerie-picture">
+                    <source srcset="/<%-img.mic%>" media="(max-width:700px)"/>
+                    <img src="/<%-locals.cale + img.cale_fisier%>" alt="camioane">
+                </picture>
+                <figcaption class="fig-cap-galerie-statica">asdf</figcaption>
+            </figure>
+            <% } %>
+            </div>
+        </section>
+        <section id="galerie2" class="galerie">
+            <div class="grid_2col">
+                <% for (let imag of locals.imagini){  %>
+                <figure>
+                    <picture>
+                        <!-- il ia pe primul care se potriveste cu query-ul din media-->
+                        <source srcset="/<%-imag.mic%>" media="(max-width:700px)"/>
+                        <img src="/<%-imag.mare%>" alt="text"/>
+                    </picture>
+                    <figcaption><%-imag.descriere%></figcaption>
+                </figure>
+                <% } %>
+            </div>
+        </section>
         </div>
         <div id="div2">
             <div class="table-continer-mobile">
-            <table class="tabel-epic-frate">
+            <table>
                 <caption>Cateva din ofertele noastre</caption>
                 <thead>
                     <tr>
@@ -70,8 +91,13 @@
             </div>
         </div>
         <div id="div3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros velit, facilisis vel felis elementum, tempus gravida ante. Sed eget ullamcorper leo. Duis finibus volutpat augue, in tristique ligula gravida sit amet. Sed condimentum interdum diam, ut ullamcorper eros bibendum ut. Nullam interdum dapibus nulla, quis dignissim sapien tempus sit amet. Pellentesque laoreet lacus vel fermentum tincidunt. Donec ac facilisis nisl. Fusce eleifend libero ipsum, non suscipit nibh consectetur feugiat. Vestibulum luctus mi dictum, ultricies erat a, bibendum erat.</p>
-
+            <video controls style="width:100%;height:auto" poster="/resurse/img/403 acces nepermis.jpg">
+                <source src="resurse/video/truck.mp4" type="video/mp4">
+                <source src="resurse/video/truck.ogv" type="video/ogv">
+          
+                <track default src="resurse/video/track/caption_ro.vtt" kind="captions" srclang="ro" label="romană" />
+                <track  src="resurse/video/track/caption_en.vtt" kind="captions" srclang="en" label="engleză" />
+              </video>
         </div>
         <div id="div4">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros velit, facilisis vel felis elementum, tempus gravida ante. Sed eget ullamcorper leo. Duis finibus volutpat augue, in tristique ligula gravida sit amet. Sed condimentum interdum diam, ut ullamcorper eros bibendum ut. Nullam interdum dapibus nulla, quis dignissim sapien tempus sit amet. Pellentesque laoreet lacus vel fermentum tincidunt. Donec ac facilisis nisl. Fusce eleifend libero ipsum, non suscipit nibh consectetur feugiat. Vestibulum luctus mi dictum, ultricies erat a, bibendum erat.</p>
@@ -124,7 +150,7 @@
                             <li> FH 2012 </li>
                         </ol>
                         <p><a href="volvo.html">Oferta completa Volvo</a></p>
-                        <a href="https://www.volvotrucks.ro/ro-ro/">SITE OFICIAL VOLVO</a>
+                        <a href="https://www.volvotrucks.ro/ro-ro/" target="_blank">SITE OFICIAL VOLVO</a>
                     </details>
                 </section>
                 <section>
